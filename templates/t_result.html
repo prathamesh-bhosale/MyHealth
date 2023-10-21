@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br><br>
+<div class="container mb-5 pt-5" text>
+    <h1 class="text-center">Total Health Prediction Result</h1>
+        <h1>Prediction: <span class='danger'>Oops! You have {{pred}}.</span></h1>
+        <img class="gif" src="{{ url_for('static', filename='sad.gif') }}" alt="CANCER Image">
+
+       
+</div>
+{% endblock %}
